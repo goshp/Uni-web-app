@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>University Website Design - Eclisis</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/edlogo7-PhotoRoom.png"></a>
+                <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certificate & Online Programs For 2023</h1>
+        </section>
+
+        <!---------blog page content------------>
+
+        <section class="blg-content">
+            <div class="row">
+                <div class="blg-left">
+                    <img src="Images/certificate.jpg">
+                    <h2>Our Certificate & Online Programs For 2023</h2>
+                    <p>Our community is a catalyst for discovery, innovation and progress, creating 
+                    knowledge and solutions that <br> make a tangible difference around the globe. And we 
+                    prepare our students for success through an <br> outstanding global education rooted in 
+                    excellence, inclusion and close-knit learning communities.
+                    The ideas, innovations and contributions of more than 660,000 graduates advance 
+                    Digital School <br> impact on communities across the globe.</p>
+                    <br>
+                    <p>The University of Toronto's strategic priorities provide a framework around three areas 
+                    of focus for the U of T community. <br> The three priorities are our commitment to achieving 
+                    the goals set out in the University's Towards 2030 plan: to <br> enhance and strengthen our 
+                    standing as a globally ranked research powerhouse and leader in research-intensive education.</p>
+                    <br>
+                    <p>The Governing Council, established by the University of Toronto Act, 1971, oversees the academic, 
+                    business and student affairs of <br> the University. Together with the Chancellor, President and 
+                    senior administration, the Council represents the University’s vision, mission and purpose both 
+                    locally and globally.</p>
+
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="blg-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Artificial Intelligence</span>
+                        <span>31</span>
+                    </div>
+                    <div>
+                        <span>Deep Thinking Analysis</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Business Intelligence</span>
+                        <span>41</span>
+                    </div>
+                    <div>
+                        <span>Machine Learnig</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Electrical and Electronics</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>41</span>
+                    </div>
+                    <div>
+                        <span>Data Analytics</span>
+                        <span>35</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!---------------Footer ------------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>We are proud to be one of the world’s top research-intensive universities, 
+            bringing together top minds from every <br> conceivable background and discipline 
+            to collaborate on the world’s most pressing challenges.</p>
+            <p>Our community is a catalyst for discovery, innovation and progress, creating 
+            knowledge and solutions that <br> make a tangible difference around the globe. And we 
+            prepare our students for success through an <br> outstanding global education rooted in 
+            excellence, inclusion and close-knit learning communities.</p>
+            <p>The ideas, innovations and contributions of more than 660,000 graduates advance 
+            Digital School <br> impact on communities across the globe.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedIn"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </section>
+
+        <!---------------Javascript toggle menu-------->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
